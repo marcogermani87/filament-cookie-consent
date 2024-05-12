@@ -11,5 +11,5 @@ it('can render dashboard', function () {
 
 it('can see cookie consent', function () {
     livewire(Dashboard::class)
-        ->assertSee('js-cookie-consent');
+        ->assertSee('Allow cookies');
 });
