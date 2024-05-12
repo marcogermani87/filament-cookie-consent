@@ -1,13 +1,14 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace MarcoGermani87\FilamentCookieConsent;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class FilamentCookieConsentServiceProvider extends PackageServiceProvider
 {
+    public static string $name = 'filament-cookie-consent';
+
     public function configurePackage(Package $package): void
     {
         /*
@@ -16,10 +17,8 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('filament-cookie-consent')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasViews();
     }
 }
