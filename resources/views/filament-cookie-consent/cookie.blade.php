@@ -1,1 +1,0 @@
-@include('cookie-consent::index')

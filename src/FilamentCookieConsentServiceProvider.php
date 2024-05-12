@@ -2,6 +2,9 @@
 
 namespace MarcoGermani87\FilamentCookieConsent;
 
+use Illuminate\Contracts\View\View;
+use Illuminate\Cookie\Middleware\EncryptCookies;
+use Illuminate\Support\Facades\Cookie;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -19,6 +22,12 @@ class FilamentCookieConsentServiceProvider extends PackageServiceProvider
         $package
             ->name('filament-cookie-consent')
             ->hasConfigFile()
-            ->hasViews();
+            ->hasViews()
+            ->hasTranslations()
+            ->hasViewComposer('filament-cookie-consent::index', function (View $view) {
+                $cookieConsentConfig = config('cookie-consent');
+                $alreadyConsentedWithCookies = Cookie::has($cookieConsentConfig['cookie_name']);
+                $view->with(compact('alreadyConsentedWithCookies', 'cookieConsentConfig'));
+            });
     }
 }

@@ -2,9 +2,10 @@
 
 namespace MarcoGermani87\FilamentCookieConsent;
 
+use Filament\Contracts\Plugin;
 use Filament\Panel;
 
-class FilamentCookieConsent
+class FilamentCookieConsent implements Plugin
 {
     public function getId(): string
     {
@@ -13,15 +14,15 @@ class FilamentCookieConsent
 
     public function register(Panel $panel): void
     {
-
+        $panel->renderHook(
+            'panels::body.end',
+            fn () => view('filament-cookie-consent::index'),
+        );
     }
 
     public function boot(Panel $panel): void
     {
-        $panel->renderHook(
-            'panels::body.end',
-            fn () => view('filament-cookie-consent.cookie'),
-        );
+
     }
 
     public static function make(): static
