@@ -3,7 +3,6 @@
 namespace MarcoGermani87\FilamentCookieConsent;
 
 use Illuminate\Contracts\View\View;
-use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Support\Facades\Cookie;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
