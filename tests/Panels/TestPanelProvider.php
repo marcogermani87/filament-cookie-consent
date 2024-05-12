@@ -21,8 +21,10 @@ class TestPanelProvider extends PanelProvider
     public function panel(Panel $panel): Panel
     {
         return $panel
-            ->id('test-panel')
+            ->id('panel')
+            ->path('panel')
             ->default()
+            ->login()
             ->plugin(FilamentCookieConsent::make())
             ->middleware([
                 EncryptCookies::class,

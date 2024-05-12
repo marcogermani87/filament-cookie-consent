@@ -42,7 +42,7 @@
     "autoload": {
         "psr-4": {
             "MarcoGermani87\\FilamentCookieConsent\\": "src/",
-            "MarcoGermani87\\FilamentCookieConsent\\FilamentCookieConsent\\Factories\\": "database/factories/"
+            "MarcoGermani87\\FilamentCookieConsent\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
