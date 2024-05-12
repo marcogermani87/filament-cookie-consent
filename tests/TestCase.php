@@ -29,7 +29,7 @@ class TestCase extends Orchestra
         $this->setUpDatabase($this->app);
 
         Factory::guessFactoryNamesUsing(
-            fn(string $modelName) => 'MarcoGermani87\\FilamentCookieConsent\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'MarcoGermani87\\FilamentCookieConsent\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
@@ -71,7 +71,7 @@ class TestCase extends Orchestra
     /**
      * Set up the database.
      *
-     * @param Application $app
+     * @param  Application  $app
      */
     protected function setUpDatabase($app)
     {
