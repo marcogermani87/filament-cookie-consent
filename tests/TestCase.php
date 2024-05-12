@@ -7,7 +7,6 @@ use BladeUI\Icons\BladeIconsServiceProvider;
 use Filament\Actions\ActionsServiceProvider;
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
-use Filament\Notifications\NotificationsServiceProvider;
 use Filament\Support\SupportServiceProvider;
 use Filament\Tables\TablesServiceProvider;
 use Filament\Widgets\WidgetsServiceProvider;
@@ -50,10 +49,6 @@ class TestCase extends Orchestra
 
             TestPanelProvider::class,
         ];
-
-        if (class_exists(NotificationsServiceProvider::class)) {
-            $packageProviders[] = NotificationsServiceProvider::class;
-        }
 
         return $packageProviders;
     }
