@@ -11,10 +11,10 @@ use Filament\Notifications\NotificationsServiceProvider;
 use Filament\Support\SupportServiceProvider;
 use Filament\Tables\TablesServiceProvider;
 use Filament\Widgets\WidgetsServiceProvider;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Application;
 use Livewire\LivewireServiceProvider;
-use Illuminate\Database\Eloquent\Factories\Factory;
 use MarcoGermani87\FilamentCookieConsent\FilamentCookieConsentServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
