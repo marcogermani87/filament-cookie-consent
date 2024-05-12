@@ -16,7 +16,7 @@
     backupStaticProperties="false"
 >
     <testsuites>
-        <testsuite name="VendorName Test Suite">
+        <testsuite name="MarcoGermani87 Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
@@ -30,6 +30,12 @@
     <logging>
         <junit outputFile="build/report.junit.xml"/>
     </logging>
+    <php>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="APP_KEY" value="base64:87ATL+uC34Ka+wY9lE383tUb+DtRgSHukRsNxnuocBM="/>
+        <env name="MAIL_MAILER" value="log"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+    </php>
     <source>
         <include>
             <directory suffix=".php">./src</directory>
