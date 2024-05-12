@@ -76,7 +76,9 @@ composer test
 
 ## Screenshots
 
-![](https://raw.githubusercontent.com/marcogermani87/filament-cookie-consent/main/screenshots/dark.png)
+![](https://raw.githubusercontent.com/marcogermani87/filament-cookie-consent/main/screenshots/bottom.png)
+
+![](https://raw.githubusercontent.com/marcogermani87/filament-cookie-consent/main/screenshots/top.png)
 
 ## Changelog
 
