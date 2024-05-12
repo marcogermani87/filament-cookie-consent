@@ -11,8 +11,7 @@ it('can render dashboard', function () {
 });
 
 it('can see cookie consent', function () {
-    Livewire::test(Dashboard::class)
+    Livewire::withoutLazyLoading();
+    livewire(Dashboard::class)
         ->assertSee('Allow cookies');
-//    livewire(Dashboard::class)
-//        ->assertSee('js-cookie-consent');
 });
