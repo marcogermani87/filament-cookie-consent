@@ -2,7 +2,6 @@
 
 namespace MarcoGermani87\FilamentCookieConsent;
 
-use Filament\Contracts\Plugin;
 use Filament\Panel;
 
 class FilamentCookieConsent
@@ -20,9 +19,9 @@ class FilamentCookieConsent
     public function boot(Panel $panel): void
     {
         $panel->renderHook(
-                'panels::body.end',
-                fn () => view('filament-cookie-consent.cookie'),
-            );
+            'panels::body.end',
+            fn () => view('filament-cookie-consent.cookie'),
+        );
     }
 
     public static function make(): static
