@@ -17,6 +17,7 @@ use Illuminate\Foundation\Application;
 use Livewire\LivewireServiceProvider;
 use MarcoGermani87\FilamentCookieConsent\FilamentCookieConsentServiceProvider;
 use MarcoGermani87\FilamentCookieConsent\Tests\Panels\TestPanelProvider;
+use MarcoGermani87\FilamentCookieConsent\Tests\Models\User;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
@@ -84,6 +85,6 @@ class TestCase extends Orchestra
 
         $this->adminUser = User::create(['email' => 'admin@example.com', 'name' => 'Admin']);
 
-        self::$migration->up();
+        //self::$migration->up();
     }
 }
