@@ -42,6 +42,7 @@ return [
     ],
 
     'privacy_policy_button' => [
+        'enabled' => true,
         'href' => '/privacy-policy',
         'size' => 'sm',
         'color' => 'gray',
@@ -70,13 +71,13 @@ Register the plugin through your panel service provider:
 composer test
 ```
 
+## Screenshots
+
+![](https://raw.githubusercontent.com/marcogermani87/filament-cookie-consent/main/screenshots/dark.png)
+
 ## Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
-
-## Security Vulnerabilities
-
-If you discover any security-related issues, please email freek@spatie.be instead of using the issue tracker.
 
 ## Credits
 

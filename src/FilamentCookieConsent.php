@@ -4,6 +4,8 @@ namespace MarcoGermani87\FilamentCookieConsent;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;
+use Filament\View\PanelsRenderHook;
+use Illuminate\Support\Facades\Config;
 
 class FilamentCookieConsent implements Plugin
 {
@@ -14,8 +16,9 @@ class FilamentCookieConsent implements Plugin
 
     public function register(Panel $panel): void
     {
+        $position = Config::get('filament-cookie-consent.position') ?? 'end';
         $panel->renderHook(
-            'panels::body.end',
+            $position == 'start' ? PanelsRenderHook::HEAD_START : PanelsRenderHook::BODY_END,
             fn () => view('filament-cookie-consent::index'),
         );
     }
