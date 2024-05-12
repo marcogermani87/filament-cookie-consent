@@ -20,6 +20,8 @@ use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
+    protected User $adminUser;
+
     protected function setUp(): void
     {
         parent::setUp();
