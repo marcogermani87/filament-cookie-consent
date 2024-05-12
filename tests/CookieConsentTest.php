@@ -11,5 +11,5 @@ it('can render dashboard', function () {
 
 it('can see cookie consent', function () {
     livewire(Dashboard::class)
-        ->assertSee('Allow cookies');
+        ->assertSee('Your experience on this site will be improved by allowing cookies.');
 });
