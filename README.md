@@ -36,6 +36,9 @@ This is the contents of the published config file:
 
 ```php
 return [
+    // 'start', 'end'
+    'position' => 'start',
+    
     'consent_button' => [
         'size' => 'sm',
         'color' => 'warning',
