@@ -1,10 +1,10 @@
 <?php
 
-namespace VendorName\Skeleton\Tests;
+namespace MarcoGermani87\FilamentCookieConsent\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use VendorName\Skeleton\FilamentCookieConsentServiceProvider;
+use MarcoGermani87\FilamentCookieConsent\FilamentCookieConsentServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,7 +13,7 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'VendorName\\Skeleton\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'MarcoGermani87\\FilamentCookieConsent\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
