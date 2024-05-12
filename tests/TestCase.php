@@ -7,6 +7,7 @@ use BladeUI\Icons\BladeIconsServiceProvider;
 use Filament\Actions\ActionsServiceProvider;
 use Filament\FilamentServiceProvider;
 use Filament\Forms\FormsServiceProvider;
+use Filament\Notifications\NotificationsServiceProvider;
 use Filament\Support\SupportServiceProvider;
 use Filament\Tables\TablesServiceProvider;
 use Filament\Widgets\WidgetsServiceProvider;
@@ -28,7 +29,7 @@ class TestCase extends Orchestra
         $this->setUpDatabase($this->app);
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'MarcoGermani87\\FilamentCookieConsent\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn(string $modelName) => 'MarcoGermani87\\FilamentCookieConsent\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
@@ -50,6 +51,10 @@ class TestCase extends Orchestra
             TestPanelProvider::class,
         ];
 
+        if (class_exists(NotificationsServiceProvider::class)) {
+            $packageProviders[] = NotificationsServiceProvider::class;
+        }
+
         return $packageProviders;
     }
 
@@ -66,7 +71,7 @@ class TestCase extends Orchestra
     /**
      * Set up the database.
      *
-     * @param  Application  $app
+     * @param Application $app
      */
     protected function setUpDatabase($app)
     {
