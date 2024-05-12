@@ -15,8 +15,9 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Application;
 use Livewire\LivewireServiceProvider;
-use MarcoGermani87\FilamentCookieConsent\FilamentCookieConsentServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
+use MarcoGermani87\FilamentCookieConsent\Tests\Panels\TestPanelProvider;
+use MarcoGermani87\FilamentCookieConsent\FilamentCookieConsentServiceProvider;
 
 class TestCase extends Orchestra
 {
