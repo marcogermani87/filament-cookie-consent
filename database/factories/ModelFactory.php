@@ -1,6 +1,6 @@
 <?php
 
-namespace VendorName\Skeleton\Database\Factories;
+namespace MarcoGermani87\FilamentCookieConsent\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
