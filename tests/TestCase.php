@@ -3,8 +3,8 @@
 namespace MarcoGermani87\FilamentCookieConsent\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use MarcoGermani87\FilamentCookieConsent\FilamentCookieConsentServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
