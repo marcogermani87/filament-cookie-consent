@@ -1,7 +1,7 @@
 <?php
 
-use Livewire\Livewire;
 use Filament\Pages\Dashboard;
+use Livewire\Livewire;
 
 use function Pest\Livewire\livewire;
 
