@@ -1,5 +1,6 @@
 <?php
 
+use Livewire\Livewire;
 use Filament\Pages\Dashboard;
 
 use function Pest\Livewire\livewire;
@@ -10,6 +11,8 @@ it('can render dashboard', function () {
 });
 
 it('can see cookie consent', function () {
-    livewire(Dashboard::class)
-        ->assertSee('Your experience on this site will be improved by allowing cookies.');
+    Livewire::test(Dashboard::class)
+        ->assertSee('Allow cookies');
+//    livewire(Dashboard::class)
+//        ->assertSee('js-cookie-consent');
 });
