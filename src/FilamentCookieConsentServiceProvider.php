@@ -26,8 +26,13 @@ class FilamentCookieConsentServiceProvider extends PackageServiceProvider
             ->hasTranslations()
             ->hasViewComposer('filament-cookie-consent::index', function (View $view) {
                 $cookieConsentConfig = config('cookie-consent');
+                $pluginConfig = config('filament-cookie-consent');
                 $alreadyConsentedWithCookies = Cookie::has($cookieConsentConfig['cookie_name']);
-                $view->with(compact('alreadyConsentedWithCookies', 'cookieConsentConfig'));
+                $view->with(compact(
+                    'alreadyConsentedWithCookies',
+                    'cookieConsentConfig',
+                    'pluginConfig',
+                ));
             });
     }
 }

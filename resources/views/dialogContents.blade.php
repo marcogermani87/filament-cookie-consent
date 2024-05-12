@@ -4,8 +4,21 @@
             {!! trans('cookie-consent::texts.message') !!}
         </div>
         <div class="basis-1/4 mx-3">
-            <x-filament::button size="sm" color="warning" class="js-cookie-consent-agree cookie-consent__agree">
+            <x-filament::button
+                size="{{ $pluginConfig['consent_button']['size'] }}"
+                color="{{ $pluginConfig['consent_button']['color'] }}"
+                class="js-cookie-consent-agree cookie-consent__agree"
+            >
                 {{ trans('cookie-consent::texts.agree') }}
+            </x-filament::button>
+            <x-filament::button
+                size="{{ $pluginConfig['privacy_policy_button']['size'] }}"
+                href="{{ url($pluginConfig['privacy_policy_button']['href']) }}"
+                target="{{ $pluginConfig['privacy_policy_button']['target'] }}"
+                tag="a"
+                color="{{ $pluginConfig['privacy_policy_button']['color'] }}"
+            >
+                {{ trans('filament-cookie-consent::filament-cookie-consent.privacy_policy_button') }}
             </x-filament::button>
         </div>
     </div>
