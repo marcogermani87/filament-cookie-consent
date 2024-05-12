@@ -83,5 +83,7 @@ class TestCase extends Orchestra
         });
 
         $this->adminUser = User::create(['email' => 'admin@example.com', 'name' => 'Admin']);
+
+        self::$migration->up();
     }
 }
