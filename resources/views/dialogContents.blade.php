@@ -1,4 +1,4 @@
-<div class="js-cookie-consent cookie-consent {{ $pluginConfig['position'] === 'end' ? 'fixed bottom-0 left-0' : 'relative left-0 top-0' }} z-50 w-full p-4 bg-white border-t border-gray-200 shadow md:p-6 dark:bg-gray-800 dark:border-gray-600">
+<div class="js-cookie-consent cookie-consent {{ $pluginConfig['position'] === 'end' ? 'fixed bottom-0 left-0' : 'sticky left-0 top-0' }} z-50 w-full p-4 bg-white border-t border-gray-200 shadow md:p-6 dark:bg-gray-800 dark:border-gray-600">
     <div class="flex justify-center flex-row">
         <div class="basis-3/4 max-w-7xl">
             {!! trans('cookie-consent::texts.message') !!}
