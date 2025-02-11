@@ -16,7 +16,7 @@ This project is based on [spatie/laravel-cookie-consent](https://github.com/spat
 | Plugin  | Filament | Laravel | PHP |
 | ------------- | ------------- | ------------- | -------------|
 | 1.x  | 3.x  | 10.x | 8.x |
-| 1.x  | 3.x  | 11.x | 8.2 \| 8.3 |
+| 1.x  | 3.x  | 11.x | 8.2 \| 8.3 \| 8.4 |
 
 ## Installation
 
