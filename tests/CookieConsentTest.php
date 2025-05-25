@@ -7,9 +7,7 @@ use MarcoGermani87\FilamentCookieConsent\Tests\Models\User;
 
 use function Pest\Livewire\livewire;
 
-beforeEach(function () {
-
-});
+beforeEach(function () {});
 
 it('can render dashboard', function () {
     $this->actingAs(User::factory()->create());
@@ -17,8 +15,8 @@ it('can render dashboard', function () {
         ->assertSuccessful();
 });
 
-//it('can see cookie consent', function () {
+// it('can see cookie consent', function () {
 //    Livewire::withoutLazyLoading();
 //    $this->get(Filament::getLoginUrl())
 //        ->assertContent('Allow cookies');
-//});
+// });
