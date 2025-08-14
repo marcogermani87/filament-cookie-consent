@@ -2,6 +2,16 @@
 
 All notable changes to `filament-cookie-consent` will be documented in this file.
 
+## v1.1.2 - 2025-08-14
+
+### What's Changed
+
+* Bump aglipanci/laravel-pint-action from 2.5 to 2.6 by @dependabot[bot] in https://github.com/marcogermani87/filament-cookie-consent/pull/7
+* Bump stefanzweifel/git-auto-commit-action from 5 to 6 by @dependabot[bot] in https://github.com/marcogermani87/filament-cookie-consent/pull/6
+* Bump actions/checkout from 4 to 5 by @dependabot[bot] in https://github.com/marcogermani87/filament-cookie-consent/pull/8
+
+**Full Changelog**: https://github.com/marcogermani87/filament-cookie-consent/compare/v1.1.1...v1.1.2
+
 ## v1.1.1 - 2025-05-25
 
 ### What's Changed
