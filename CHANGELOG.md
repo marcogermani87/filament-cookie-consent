@@ -2,6 +2,15 @@
 
 All notable changes to `filament-cookie-consent` will be documented in this file.
 
+## v1.2.0 - 2025-12-02
+
+### What's Changed
+
+* Bump stefanzweifel/git-auto-commit-action from 6 to 7 by @dependabot[bot] in https://github.com/marcogermani87/filament-cookie-consent/pull/9
+* Bump actions/checkout from 5 to 6 by @dependabot[bot] in https://github.com/marcogermani87/filament-cookie-consent/pull/10
+
+**Full Changelog**: https://github.com/marcogermani87/filament-cookie-consent/compare/v1.1.2...v1.2.0
+
 ## v1.1.2 - 2025-08-14
 
 ### What's Changed
